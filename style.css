@@ -696,7 +696,7 @@ padding: 0px 15px;
 .col-2 div
 {
 	vertical-align: top;
-	text-align: center;
+  padding-left: 37%;
     font-size: 18px;
     font-weight: 600;
     position: relative;
@@ -705,10 +705,17 @@ padding: 0px 15px;
 {
 	content: "";
 	position: absolute;
-	border:6px solid #ef8d22;
 	left: 30%;
-    top: 15%;
+  top: 15%;
 	border-radius: 30px;
+}
+.col-2 div.in-pro::before
+{
+  border:6px solid #ef8d22;
+}
+.col-2 div.in-q::before
+{
+	border:6px solid #0c7cba;
 }
 @media screen and (max-width: 1024px) 
 {
@@ -732,6 +739,10 @@ padding: 0px 15px;
 	{
     	width: 39.5%;
 	}
+  .col-2 div
+  {
+    padding-left: 30%;
+  }
 }
 @media screen and (max-width: 991px) 
 {
@@ -746,6 +757,7 @@ padding: 0px 15px;
 	.col-2 div
 	{
 		font-size: 16px;
+    padding-left: 25%;
 	}
 	.col-2 div::before
 	{
@@ -828,6 +840,7 @@ padding: 0px 15px;
 	}
 	.col-2 div {
     font-size: 14px;
+    padding-left: 20%;
 	}
 	.col-2 	
 	{
